@@ -24,10 +24,10 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h1 class="title">Мой магазин</h1>
                     <div>
-                       <form action="" method="post">
+                       <form action="" method="post">{% csrf_token %}
                        {{ form.as_p }}
                         <div>
-                           <button type="submit" class="btn">Отправить</button>
+                           <button type="submit" class="btn btn-primary">Отправить</button>
                         </div>
                        </form>
                     </div>
