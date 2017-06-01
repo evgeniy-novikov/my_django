@@ -1,8 +1,8 @@
 from django import forms
 from .models import *
 
-class SubscribersFrom(forms.ModelForm):
+class SubscriberFrom(forms.ModelForm):
 
     class Meta:
-        model = Subscribers
+        model = Subscriber
         exclude = [""]
